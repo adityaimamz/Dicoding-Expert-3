@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kanit:wght@500&family=Nabla&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    color: #424242;
+}
+
+/* Header and Navbar*/
+
+.header-logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.header-logo {
+    min-height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.header-title {
+    margin: 15px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 40px;
+    color: #1B1717;
+    display: inline-block;
+}
+
+.header-toggle {
+    font-size: 45px;
+    padding: 8px;
+    margin: 10px auto;
+    display: block;
+    color: crimson;
+    border: none;
+    background-color:#fff;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+    background-color: crimson;
+}
+
+.navbar-card {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 11px;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #1B1717;
+}
+.navbar a:focus {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+/* Hero / Jumbotron */
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-image: url("/src/public/images/heros/hero-image_2.webp");
+    background-position: center;
+    background-color: black;
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.hero-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.hero-motto {
+    text-shadow: 2px 2px 2px black;
+    color: #fff;
+    margin-top: 11px;
+    font-size: 19px;
+}
+
+/* skip to content */
+.toContent {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: crimson;  
+  color: white;
+  z-index: 100;
+  text-decoration: none;
+  border: none ;
+  }
+
+  .toContent:focus {
+    top: 0;
+ }
+
+/* content */
+
+.content {
+  padding: 25px;
+}
+
+
+/*
+ * headline
+ */
+
+.headline__figure {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .headline__figure img {
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .headline__figure figcaption {
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  .headline__content {
+    width: 100%;
+    padding: 16px 0 0 ;
+  }
+  
+  .headline__title {
+    font-weight: bold;
+    font-family: 'Josefin-Sans';
+    color:crimson;
+    text-align: center;
+    font-size: 33px;
+  }
+  
+  .headline__description {
+    text-align: justify;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .headline__button {
+    font-family: "kanit";
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 12px 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #1B1717;
+  }
+  
+  .headline__button a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .headline__button a:visited {
+    color: white;
+  }
+
+  .headline__button:focus {
+    color: #FFF;
+    background-color: crimson;
+  }
+
+  .headline__button:hover {
+    color: #FFF;
+    background-color: crimson;
+  }
+  
+  main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* card */
+
+.card {
+    width: 100%;
+    margin: 55px auto;
+    text-align: center;
+}
+
+.card-label {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.card-label::after {
+    content: '';
+    margin-top: 15px;
+    display: block;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+/* restaurant */
+
+.restaurant {
+    margin: 32px auto auto;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.restaurant-list {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.restaurant-list-content {
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.restaurant-list-location {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: crimson;
+    color: #fff;
+    font-weight: 550;
+    width: 50%;
+    padding: 7px;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+}
+
+.restaurant-list-thumbnail {
+    width: 100%;
+}
+
+.restaurant-list-rating {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.restaurant-list-rating-star {
+    font-size: 14px;
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.restaurant-list-title {
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.restaurant-list-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurant-list-description {
+    margin-top: 12px;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient: vertical;
+}
+#tombol a:visited{
+  color: white;
+}
+#tombol a {
+  color: white;
+  text-decoration: none;
+}
+
+#tombol {
+  font-family: 'kanit';
+  text-decoration: none;
+    border: none;
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #1B1717;
+    text-align: center;
+    width: 100%;
+    min-height: 45px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#tombol:focus {
+  background-color: crimson;
+}
+
+#tombol:hover {
+    background-color: crimson;
+  }
+
+
+  .daftar-restoran h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid crimson;
+    display: inline-block;
+}
+
+.daftar-restoran p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.restoran { 
+    margin: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.info_restoran{
+    margin: 50px 20px;
+}
+
+.info_restoran > img{
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.background_tabel_info_restoran{
+    margin: 10px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    text-align: left;
+}
+
+.background_tabel_info_restoran::-webkit-scrollbar { 
+    display: none;
+}
+
+.tabel_info_restoran{
+    width: 100%;
+}
+
+.normal_p{
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+.review_restoran{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.review_restoran > h3 {
+    font-size: 16px;
+}
+ 
+
+.review_restoran > h3 {
+    font-size: 16px;
+}
+
+.contentRes {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.favorite {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: crimson;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* footer */
+
+
+footer {
+    background-color: crimson;
+    color: #fff;
+    padding: 3em;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  footer p {
+    font-size: 13px;
+  }
+  
+  .container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+  footer .social-media {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 11px 0;
+    flex-wrap: wrap;
+  }
+  
+  footer .social-media li {
+    list-style: none;
+  }
+  footer .social-media li a {
+   font-size: 44px;
+    color: #FFF;
+    margin: 0 10px;
+  }
+  
+  
+  
