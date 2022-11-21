@@ -7,6 +7,7 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint ./src",
     "test": "karma start",
+    "build-image": "node sharp.js",
     "serve": "http-server dist"
   },
   "keywords": [],
@@ -35,6 +36,7 @@
     "karma-sourcemap-loader": "^0.3.8",
     "karma-webpack": "^5.0.0",
     "puppeteer": "^19.2.2",
+    "sharp": "^0.31.2",
     "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
     "webpack-bundle-analyzer": "^4.7.0",

@@ -293,7 +293,8 @@ body {
     font-weight: bold;
 }
 
-.restaurant-list-rating-star {
+.restaurant-list-rating-star,
+.detail-rating {
     font-size: 14px;
     color: orange;
     text-decoration: none;

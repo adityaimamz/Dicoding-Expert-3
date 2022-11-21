@@ -32,9 +32,15 @@ const createRestaurantDetailTemplate = (restaurant) => `
               <th>Kategori</th>
               <td class="normal_p">${restaurant.categories.map((category) => `${category.name}`).join(', ')}</td>
           </tr>
-          <tr style="margin-bottom: 70px">
-              <th>Rating</th>
-              <td class="normal_p">${restaurant.rating}</td>
+          <tr>
+              <th style="margin-bottom: 70px">Rating </th>
+              <td class="normal_p detail-rating">${restaurant.rating}</td>
+          </tr>
+          <tr>
+              <th>Deskripsi</th>
+          </tr>
+          <tr>
+            <td style="vertical-align: top" class="normal_p">${restaurant.description}</td>
           </tr>
       </table>
       <br>
